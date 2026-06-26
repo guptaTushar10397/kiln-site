@@ -21,7 +21,7 @@ body{
 }
 a{color:var(--ember-2);text-decoration:none}
 a:hover{text-decoration:underline}
-.wrap{max-width:var(--max);margin:0 auto;padding:0 24px}
+.wrap{max-width:var(--max);margin:0 auto;padding-left:24px;padding-right:24px}
 
 .nav{position:sticky;top:0;z-index:10;
   backdrop-filter:saturate(180%) blur(20px);-webkit-backdrop-filter:saturate(180%) blur(20px);
@@ -47,7 +47,8 @@ a:hover{text-decoration:underline}
 .badge .dot{width:7px;height:7px;border-radius:50%;
   background:linear-gradient(135deg,var(--ember-1),var(--ember-2))}
 
-section{padding:28px 0}
+section{padding:40px 0}
+.callout{margin-top:8px}
 .section-title{font-size:14px;text-transform:uppercase;letter-spacing:.08em;
   color:var(--ember-2);font-weight:700;margin-bottom:20px}
 .cards{display:grid;gap:16px;grid-template-columns:repeat(3,1fr)}
