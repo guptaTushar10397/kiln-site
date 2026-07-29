@@ -123,3 +123,18 @@ footer a:hover{color:var(--text)}
   body{font-size:16px}
   section{padding:36px 0}
 }
+
+/* App icon — the real Kiln app icon (assets/icon.png), squircle-rounded.
+   The inset hairline defines the dark icon against the dark page. */
+.app-icon{display:inline-block;width:28px;height:28px;border-radius:7px;flex:none;
+  background:url(assets/icon.png) center/cover no-repeat;
+  box-shadow:0 1px 3px rgba(0,0,0,.45),inset 0 0 0 1px rgba(255,255,255,.07)}
+.hero .app-icon{display:block;width:96px;height:96px;border-radius:22px;margin:0 auto 18px;
+  box-shadow:0 10px 34px rgba(255,94,58,.28),inset 0 0 0 1px rgba(255,255,255,.08)}
+
+/* App Store download badges (hero CTA) */
+.store-row{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin-top:30px}
+.appstore{display:inline-block;line-height:0;border-radius:12px;
+  transition:transform .18s ease,filter .18s ease}
+.appstore:hover{transform:translateY(-2px);filter:brightness(1.08);text-decoration:none}
+.appstore img{height:56px;width:auto;display:block}
