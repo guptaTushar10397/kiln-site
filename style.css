@@ -158,5 +158,16 @@ footer a:hover{color:var(--text)}
 .lang-menu a:hover{background:var(--card-hover);color:var(--text);text-decoration:none}
 .lang-menu a[aria-current="true"]{color:var(--ember-2)}
 @media(max-width:680px){
-  .lang-menu{position:fixed;left:14px;right:14px;top:auto;min-width:0}
+  /* Nav labels vary a lot by language — "Confidentialité" is twice "Privacy".
+     Tighten type and gaps so all nine fit one row at 375px without clipping.
+     No overflow-x here: .nav has a backdrop-filter, which would become the
+     containing block for the dropdown and clip it. */
+  /* Two rows on mobile: brand above, links below, spread edge to edge. Nav
+     label lengths vary too much between languages to fit one row at 375px —
+     French alone needs ~409px — and this holds for any label length. */
+  .nav .wrap{flex-wrap:wrap;height:auto;padding-top:10px;padding-bottom:10px;gap:6px}
+  .brand{font-size:17px}
+  .nav-links{width:100%;justify-content:space-between;gap:10px;font-size:13.5px}
+  .lang>summary{padding:4px 0}
+  .lang-menu{position:absolute;right:0;left:auto;min-width:170px}
 }
