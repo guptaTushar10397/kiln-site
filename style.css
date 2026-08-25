@@ -138,3 +138,36 @@ footer a:hover{color:var(--text)}
   transition:transform .18s ease,filter .18s ease}
 .appstore:hover{transform:translateY(-2px);filter:brightness(1.08);text-decoration:none}
 .appstore img{height:56px;width:auto;display:block}
+
+/* language switcher — pure HTML/CSS <details>, works with JS off and is crawlable */
+.lang{position:relative;font-size:15px}
+.lang>summary{list-style:none;cursor:pointer;color:var(--muted);display:inline-flex;
+  align-items:center;gap:6px;padding:4px 2px}
+.lang>summary::marker{content:""}
+.lang>summary::-webkit-details-marker{display:none}
+.lang>summary::after{content:"";width:7px;height:7px;border-right:1.6px solid currentColor;
+  border-bottom:1.6px solid currentColor;transform:rotate(45deg) translate(-1px,-1px)}
+.lang[open]>summary::after{transform:rotate(-135deg) translate(-2px,-2px)}
+.lang>summary:hover{color:var(--text)}
+.lang[open]>summary{color:var(--text)}
+.lang-menu{position:absolute;right:0;top:calc(100% + 10px);z-index:30;min-width:184px;
+  background:var(--card);border:1px solid var(--border);border-radius:var(--radius-sm);
+  padding:8px;display:grid;gap:2px;
+  box-shadow:0 18px 40px rgba(0,0,0,.5)}
+.lang-menu a{display:block;padding:8px 12px;border-radius:9px;color:var(--body);font-size:14px}
+.lang-menu a:hover{background:var(--card-hover);color:var(--text);text-decoration:none}
+.lang-menu a[aria-current="true"]{color:var(--ember-2)}
+@media(max-width:680px){
+  /* Nav labels vary a lot by language — "Confidentialité" is twice "Privacy".
+     Tighten type and gaps so all nine fit one row at 375px without clipping.
+     No overflow-x here: .nav has a backdrop-filter, which would become the
+     containing block for the dropdown and clip it. */
+  /* Two rows on mobile: brand above, links below, spread edge to edge. Nav
+     label lengths vary too much between languages to fit one row at 375px —
+     French alone needs ~409px — and this holds for any label length. */
+  .nav .wrap{flex-wrap:wrap;height:auto;padding-top:10px;padding-bottom:10px;gap:6px}
+  .brand{font-size:17px}
+  .nav-links{width:100%;justify-content:space-between;gap:10px;font-size:13.5px}
+  .lang>summary{padding:4px 0}
+  .lang-menu{position:absolute;right:0;left:auto;min-width:170px}
+}
