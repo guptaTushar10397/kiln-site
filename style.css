@@ -24,6 +24,15 @@ body{
 }
 a{color:var(--ember-2);text-decoration:none}
 a:hover{text-decoration:underline}
+/* The macOS container path has no break opportunity and is wider than a
+   375px column, so without this it scrolls privacy and support sideways. */
+h1,h2,h3,p,li{overflow-wrap:break-word}
+/* German compounds are long enough to overflow a phone column on their own
+   ("Datenschutzrichtlinie"). Hyphenate them at real syllable boundaries
+   instead of letting break-word chop mid-word. Scoped to :lang(de) because
+   hyphens:auto also hyphenates words that would have fit, which would
+   re-wrap headings in the other eight languages for no reason. */
+:lang(de) h1,:lang(de) h2,:lang(de) h3{hyphens:auto;-webkit-hyphens:auto}
 .wrap{max-width:var(--max);margin:0 auto;padding-left:24px;padding-right:24px}
 
 /* nav */
@@ -34,7 +43,10 @@ a:hover{text-decoration:underline}
 .brand{display:flex;align-items:center;gap:10px;font-weight:700;font-size:19px;color:var(--text)}
 .brand:hover{text-decoration:none}
 .brand .flame{font-size:22px}
-.nav-links{display:flex;gap:26px;font-size:15px}
+.nav-links{display:flex;align-items:center;gap:26px;font-size:15px}
+/* align-items:center, not the default stretch: the <details> switcher is taller
+   than a bare link, and stretching leaves the links' text at the top of the
+   stretched box — 4px above both the switcher and the wordmark. */
 .nav-links a{color:var(--muted)}
 .nav-links a:hover{color:var(--text);text-decoration:none}
 
@@ -142,7 +154,7 @@ footer a:hover{color:var(--text)}
 /* language switcher — pure HTML/CSS <details>, works with JS off and is crawlable */
 .lang{position:relative;font-size:15px}
 .lang>summary{list-style:none;cursor:pointer;color:var(--muted);display:inline-flex;
-  align-items:center;gap:6px;padding:4px 2px}
+  align-items:center;gap:6px;padding:4px 0}
 .lang>summary::marker{content:""}
 .lang>summary::-webkit-details-marker{display:none}
 .lang>summary::after{content:"";width:7px;height:7px;border-right:1.6px solid currentColor;
@@ -158,16 +170,13 @@ footer a:hover{color:var(--text)}
 .lang-menu a:hover{background:var(--card-hover);color:var(--text);text-decoration:none}
 .lang-menu a[aria-current="true"]{color:var(--ember-2)}
 @media(max-width:680px){
-  /* Nav labels vary a lot by language — "Confidentialité" is twice "Privacy".
-     Tighten type and gaps so all nine fit one row at 375px without clipping.
-     No overflow-x here: .nav has a backdrop-filter, which would become the
-     containing block for the dropdown and clip it. */
+  /* No overflow-x anywhere in here: .nav has a backdrop-filter, which would
+     become the containing block for the dropdown and clip it. */
   /* Two rows on mobile: brand above, links below, spread edge to edge. Nav
      label lengths vary too much between languages to fit one row at 375px —
      French alone needs ~409px — and this holds for any label length. */
   .nav .wrap{flex-wrap:wrap;height:auto;padding-top:10px;padding-bottom:10px;gap:6px}
   .brand{font-size:17px}
   .nav-links{width:100%;justify-content:space-between;gap:10px;font-size:13.5px}
-  .lang>summary{padding:4px 0}
   .lang-menu{position:absolute;right:0;left:auto;min-width:170px}
 }
