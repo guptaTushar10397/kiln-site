@@ -142,6 +142,7 @@ kbd{font-family:inherit;font-size:.9em;background:var(--tile);border:1px solid v
 
 /* ── footnotes + footer ──────────────────────────────────────────────── */
 .footnotes{border-top:1px solid var(--border);padding:28px 0 8px;font-size:13px;color:var(--muted-2)}
+.footnotes a{text-decoration:underline;text-underline-offset:2px}
 .footnotes ol{padding-left:18px;display:grid;gap:8px;max-width:var(--text-max)}
 footer{border-top:1px solid var(--border);padding:28px 0 40px;color:var(--muted-2);font-size:13px}
 footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
