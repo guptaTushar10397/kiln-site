@@ -3,9 +3,12 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#000000">
 <link rel="icon" href="assets/icon.png">
+<link rel="apple-touch-icon" href="assets/icon.png">
 <title>Kiln: AI Meeting Reports</title>
-<meta name="description" content="Kiln turns your meetings into transcripts, summaries, action items and Jira stories — processed entirely on your device, in nine languages. No cloud, no account, no subscription.">
+<meta name="description" content="Kiln turns your meetings into transcripts, summaries, action items and Jira stories — processed entirely on your Mac, iPhone and iPad, in nine languages. Free, no account.">
 
 <link rel="canonical" href="https://guptatushar10397.github.io/kiln-site/index.html">
 <!-- Open Graph (WhatsApp, iMessage, Slack, Facebook, LinkedIn) -->
@@ -13,7 +16,7 @@
 <meta property="og:site_name" content="Kiln">
 <meta property="og:url" content="https://guptatushar10397.github.io/kiln-site/index.html">
 <meta property="og:title" content="Kiln: AI Meeting Reports">
-<meta property="og:description" content="Turn meetings into transcripts, summaries, action items and Jira stories — processed entirely on your device, in nine languages. No cloud, no account, no subscription.">
+<meta property="og:description" content="Turn meetings into transcripts, summaries, action items and Jira stories — processed entirely on your device, in nine languages. Free, no account.">
 <meta property="og:image" content="https://guptatushar10397.github.io/kiln-site/assets/og-card.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -40,10 +43,11 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<nav class="nav"><div class="wrap">
+<a class="skip" href="#main">Skip to content</a>
+<nav class="nav" aria-label="Main"><div class="wrap">
   <a class="brand" href="index.html"><span class="app-icon" aria-hidden="true"></span> Kiln</a>
   <div class="nav-links">
-    <a href="index.html">Home</a>
+    <a href="index.html" aria-current="page">Home</a>
     <a href="privacy.html">Privacy</a>
     <a href="support.html">Support</a>
     <details class="lang">
@@ -61,54 +65,172 @@
       </div>
     </details>
   </div>
+  <a class="nav-cta" href="https://apps.apple.com/app/id6784888925">Download</a>
 </div></nav>
 
+<main id="main">
+
+<!-- HERO -->
 <header class="hero"><div class="wrap">
-  <span class="app-icon" aria-hidden="true"></span>
-  <h1>Kiln</h1>
-  <p class="tagline">Meetings, fired into work.</p>
-  <p class="subtitle">A 100% on-device AI meeting assistant for Mac, iPhone and iPad. Record or import a meeting and turn it into transcripts, summaries, action items, and Jira stories — Kiln never sends your audio, transcripts or reports anywhere.</p>
-  <div class="badges">
-    <span class="badge"><span class="dot"></span> 100% on-device</span>
-    <span class="badge"><span class="dot"></span> Nine languages</span>
-    <span class="badge"><span class="dot"></span> No account</span>
-    <span class="badge"><span class="dot"></span> Free</span>
+  <p class="eyebrow"><span class="app-icon" aria-hidden="true"></span>Kiln</p>
+  <h1>Meetings,<br>fired into work.</h1>
+  <p class="hero-sub">Transcripts, summaries and Jira stories, made entirely on your Mac, iPhone and iPad.</p>
+  <div class="cta-row">
+    <a class="appstore" href="https://apps.apple.com/app/id6784888925"><img src="assets/app-store-badge.svg" alt="Download on the App Store" width="160" height="54"></a>
+    <a class="more" href="#how">See how it works</a>
   </div>
-  <div class="store-row">
-    <a class="appstore" href="https://apps.apple.com/app/id6784888925">
-      <img src="assets/app-store-badge.svg" alt="Download Kiln on the App Store" height="56">
-    </a>
+  <p class="fine">Free · No account · Nine languages</p>
+  <div class="hero-art">
+    <img src="assets/img/en/hero.jpg" width="2400" height="1340" fetchpriority="high"
+         alt="Kiln on a MacBook Pro showing the meeting library, and on an iPhone showing a transcript separated by speaker.">
   </div>
 </div></header>
 
-<main>
-<section class="wrap">
-  <p class="section-title">What Kiln does</p>
-  <div class="cards">
-    <div class="card"><div class="ico">🎙️</div><h3>Capture</h3><p>Record with a live waveform, or import MP3, M4A, or WAV. Kiln can even name the meeting from its own words.</p></div>
-    <div class="card"><div class="ico">💬</div><h3>Understand</h3><p>A speaker-separated transcript you can search, edit, and play back — with on-device name suggestions backed by the transcript.</p></div>
-    <div class="card"><div class="ico">📋</div><h3>Generate</h3><p>Eight report types — summary, action items, Jira stories, decisions, minutes, email, release notes — all on-device.</p></div>
-  </div>
-</section>
+<!-- INTRO -->
+<section class="section"><div class="wrap">
+  <p class="statement"><strong>Record a meeting or import one.</strong> Kiln separates the voices, writes the transcript and turns it into the document you were going to write anyway. <strong>All of it happens on your device.</strong> The audio, the transcript and the report never leave it.</p>
+</div></section>
 
-<section class="wrap">
-  <div class="callout">
-    <h2>Nine languages</h2>
-    <p>Kiln transcribes English, Spanish, French, German, Italian, Brazilian Portuguese, Mandarin Chinese, Japanese, and Korean — and the report comes back in the language of the meeting, not translated into English. Kiln's own interface is available in those nine too, and you can set it independently of your device.</p>
+<!-- HOW IT WORKS -->
+<section class="section band" id="how"><div class="wrap center">
+  <p class="eyebrow">How it works</p>
+  <h2 class="h2">Record. Fire. Ship.</h2>
+  <div class="steps">
+    <div class="step">
+      <figure><img src="assets/img/en/step-record.jpg" width="760" height="1456" loading="lazy"
+        alt="Kiln recording a meeting, with a timer and a live waveform."></figure>
+      <span class="num" aria-hidden="true">1</span>
+      <h3>Record</h3>
+      <p>Record with a live waveform, or import an MP3, M4A or WAV file. Leave the title blank and Kiln names the meeting from what was said.<sup class="fn"><a href="#fn1" aria-label="Note 1">1</a></sup></p>
+    </div>
+    <div class="step">
+      <figure><img src="assets/img/en/step-transcript.jpg" width="760" height="1456" loading="lazy"
+        alt="A transcript in Kiln, separated by speaker with timestamps."></figure>
+      <span class="num" aria-hidden="true">2</span>
+      <h3>Fire</h3>
+      <p>Kiln separates the speakers and writes a transcript you can search, edit and play back. It can suggest who’s who, backed by what each person said.<sup class="fn"><a href="#fn1" aria-label="Note 1">1</a></sup></p>
+    </div>
+    <div class="step">
+      <figure><img src="assets/img/en/step-outputs.jpg" width="760" height="1456" loading="lazy"
+        alt="Kiln’s report picker with eight report types."></figure>
+      <span class="num" aria-hidden="true">3</span>
+      <h3>Ship</h3>
+      <p>Choose a report and Kiln writes it on your device. Copy it as Markdown, or share it as a PDF.<sup class="fn"><a href="#fn1" aria-label="Note 1">1</a></sup></p>
+    </div>
   </div>
-</section>
+</div></section>
 
-<section class="wrap">
-  <div class="callout">
-    <h2>Private by construction</h2>
-    <p>No cloud, no account, no subscription, no analytics. Kiln never sends your recordings, transcripts, or reports anywhere — they stay in the app's private sandbox on your device. The only things that move them are yours: sharing or exporting something yourself, and your device's own backup.</p>
+<!-- REPORTS -->
+<section class="section"><div class="wrap center">
+  <p class="eyebrow">Reports</p>
+  <h2 class="h2">Eight reports. One tap.</h2>
+  <p class="lede">Each one is written from your transcript, in the language of the meeting.<sup class="fn"><a href="#fn1" aria-label="Note 1">1</a></sup></p>
+  <div class="reports" role="list">
+    <div class="report" role="listitem"><h3>Quick Summary</h3><p>The gist in a minute — overview, topics, conclusions</p></div>
+    <div class="report" role="listitem"><h3>Detailed Notes</h3><p>Every concept covered in depth, with examples</p></div>
+    <div class="report" role="listitem"><h3>Action Items</h3><p>Tasks with owners and priorities</p></div>
+    <div class="report" role="listitem"><h3>Jira Stories</h3><p>Sprint-ready epics, stories and acceptance criteria</p></div>
+    <div class="report" role="listitem"><h3>Technical Decisions</h3><p>Decisions with reasoning, impact and risk</p></div>
+    <div class="report" role="listitem"><h3>Meeting Minutes</h3><p>Participants, agenda, discussion and outcomes</p></div>
+    <div class="report" role="listitem"><h3>Email Draft</h3><p>A professional follow-up, ready to send</p></div>
+    <div class="report" role="listitem"><h3>Release Notes</h3><p>Features, improvements, fixes and known issues</p></div>
   </div>
-</section>
+</div></section>
 
-<section class="wrap">
-  <p style="color:var(--muted-2);font-size:14px;text-align:center;max-width:620px;margin:0 auto">Requires macOS&nbsp;26 or iOS&nbsp;26. Transcription uses Apple's on-device speech models, which need recent hardware; report generation additionally needs Apple&nbsp;Intelligence turned on. Kiln tells you plainly when a device can't run either — see <a href="support.html">Support</a>.</p>
-</section>
+<!-- PRIVACY -->
+<section class="section band"><div class="wrap">
+  <div class="center">
+    <p class="eyebrow">Privacy</p>
+    <h2 class="h2">Private by design.<br>Not by promise.</h2>
+    <p class="lede">Kiln has no server of its own. Your meetings are processed where they were recorded, and they stay there.</p>
+  </div>
+  <div class="facts">
+    <div class="fact">
+      <svg class="glyph" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="M9 9h6v6H9z"/><path d="M9 1.5v2.5M15 1.5v2.5M9 20v2.5M15 20v2.5M1.5 9H4M1.5 15H4M20 9h2.5M20 15h2.5"/></svg>
+      <h3>Everything runs on your device.</h3>
+      <p>Transcription, speaker separation, titles and reports all run locally, using Apple’s on-device frameworks plus speaker-separation models that ship inside the app.</p>
+    </div>
+    <div class="fact">
+      <svg class="glyph" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4M3 3l18 18"/></svg>
+      <h3>The Mac app can’t go online.</h3>
+      <p>It ships without permission to open a network connection, so it can’t send anything anywhere.</p>
+    </div>
+    <div class="fact">
+      <svg class="glyph" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.6-7 8-7s8 3 8 7"/><path d="M3 3l18 18"/></svg>
+      <h3>No account. No analytics.</h3>
+      <p>Nothing to sign up for, and no tracking, advertising or analytics code inside.</p>
+    </div>
+    <div class="fact">
+      <svg class="glyph" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h16M9 7V4h6v3M6 7l1 13h10l1-13"/><path d="M10 11v6M14 11v6"/></svg>
+      <h3>Delete means delete.</h3>
+      <p>Delete a meeting and its audio, transcript, speaker records and every report made from it go with it.</p>
+    </div>
+  </div>
+  <p class="center"><a class="more" href="privacy.html">Read the privacy policy</a></p>
+</div></section>
+
+<!-- LANGUAGES -->
+<section class="section"><div class="wrap center">
+  <p class="eyebrow">Languages</p>
+  <h2 class="h2">Nine languages.<br>Reports in the same one.</h2>
+  <p class="lede">Kiln transcribes nine languages and writes each report in the language of the meeting, not translated into English.<sup class="fn"><a href="#fn2" aria-label="Note 2">2</a></sup> Its own interface speaks all nine too, and you can set it separately from your device.</p>
+  <ul class="langs" aria-label="Supported languages">
+    <li lang="en">English</li><li lang="es">Español</li><li lang="fr">Français</li>
+    <li lang="de">Deutsch</li><li lang="it">Italiano</li><li lang="pt-BR">Português</li>
+    <li lang="zh-Hans">中文</li><li lang="ja">日本語</li><li lang="ko">한국어</li>
+  </ul>
+</div></section>
+
+<!-- REMINDERS (4.1) -->
+<section class="section band"><div class="wrap">
+  <div class="split">
+    <figure><img src="assets/img/en/reminders.jpg" width="760" height="1456" loading="lazy"
+      alt="Kiln’s meeting reminders card, with an Enable Reminders button."></figure>
+    <div class="text">
+      <p class="eyebrow">New in Kiln 4.1</p>
+      <h2 class="h2">Never miss a meeting note.</h2>
+      <p>Sync with your on-device calendar to receive timely alerts before your meetings start. Zero data leaves your device.</p>
+      <p>Turn reminders on with one tap when Kiln suggests it. When a reminder arrives, tap it and Kiln opens ready to record, with the meeting already named.</p>
+    </div>
+  </div>
+</div></section>
+
+<!-- MAC, IPHONE, IPAD -->
+<section class="section"><div class="wrap">
+  <div class="center">
+    <p class="eyebrow">Mac, iPhone and iPad</p>
+    <h2 class="h2">Made for each device<br>you meet on.</h2>
+    <p class="lede">A native app for Mac, iPhone and iPad, with the touches each one deserves.</p>
+  </div>
+  <div class="wide-art">
+    <img src="assets/img/en/mac-report.jpg" width="2000" height="1316" loading="lazy"
+      alt="A Quick Summary report, generated on-device, open in Kiln on a MacBook Pro.">
+  </div>
+  <ul class="ticks narrow" style="margin-left:auto;margin-right:auto">
+    <li>On a Mac, <kbd>⌘N</kbd> starts a recording and <kbd>⌘I</kbd> imports audio, from anywhere in the app.</li>
+    <li>On iPhone, a Live Activity keeps the recording on your Lock Screen and in the Dynamic Island, with a Stop button.</li>
+    <li>Meeting reminders work on all three.</li>
+  </ul>
+</div></section>
+
+<!-- FINAL CTA -->
+<section class="section band final"><div class="wrap center">
+  <h2 class="h2">Your next meeting is<br>a good place to start.</h2>
+  <p class="lede">Free on the App Store for Mac, iPhone and iPad.<sup class="fn"><a href="#fn3" aria-label="Note 3">3</a></sup></p>
+  <div class="store-row">
+    <a class="appstore" href="https://apps.apple.com/app/id6784888925"><img src="assets/app-store-badge.svg" alt="Download on the App Store" width="160" height="54"></a>
+  </div>
+</div></section>
+
 </main>
+
+<aside class="footnotes" aria-label="Notes"><div class="wrap">
+  <ol>
+    <li id="fn1">Report generation, automatic meeting titles and speaker-name suggestions use Apple Intelligence, which your device must support and have turned on. Recording, import, transcription and speaker separation don’t need it.</li>
+    <li id="fn2">Transcription uses Apple’s on-device speech models. Your device downloads each language’s model once; Kiln never fetches anything itself.</li>
+    <li id="fn3">Requires macOS 26, iOS 26 or iPadOS 26, on hardware that can run Apple’s on-device speech models. Kiln tells you plainly if a device can’t. <a href="support.html">Support</a></li>
+  </ol>
+</div></aside>
 
 <footer><div class="wrap">
   <span>© 2026 Tushar Gupta</span>

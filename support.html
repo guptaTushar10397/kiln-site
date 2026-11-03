@@ -24,12 +24,13 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<nav class="nav"><div class="wrap">
+<a class="skip" href="#main">Skip to content</a>
+<nav class="nav" aria-label="Main"><div class="wrap">
   <a class="brand" href="index.html"><span class="app-icon" aria-hidden="true"></span> Kiln</a>
   <div class="nav-links">
     <a href="index.html">Home</a>
     <a href="privacy.html">Privacy</a>
-    <a href="support.html">Support</a>
+    <a href="support.html" aria-current="page">Support</a>
     <details class="lang">
       <summary>Language</summary>
       <div class="lang-menu">
@@ -45,11 +46,12 @@
       </div>
     </details>
   </div>
+  <a class="nav-cta" href="https://apps.apple.com/app/id6784888925">Download</a>
 </div></nav>
 
-<main class="page"><div class="wrap">
+<main class="page" id="main"><div class="wrap">
   <h1>Support</h1>
-  <p class="updated">We're here to help. This page describes Kiln 4.0.</p>
+  <p class="updated">We're here to help. This page describes Kiln 4.1.</p>
 
   <p class="lead">Kiln is a private, on-device AI meeting assistant for Mac and iPhone/iPad. Record or import a meeting and turn it into transcripts, summaries, action items, Jira stories, and more — Kiln never sends your audio, transcripts or reports anywhere. Kiln transcribes nine languages, and its own interface comes in nine languages too.</p>
 
@@ -85,7 +87,7 @@
   <div class="faq">
     <div class="qa"><h3>Does Kiln connect to the internet?</h3><p>The Mac app can't — it ships without network permission, so an outbound connection is impossible. On iPhone and iPad there is exactly one kind of network request, and it is the only networking code in the app: an App Store lookup asking whether a newer version of Kiln exists — once per launch, and after that at most every fifteen minutes when you return to the app — unless a check fails to complete, in which case it may try again the next time you come back. The only thing Kiln puts in the request is its own bundle identifier — nothing about you and nothing about your meetings. Like any connection to Apple it carries your IP address and the standard system networking header, and it goes to Apple and no one else. It fails silently, and an update is never forced. Speech-model downloads are handled by the system, not by Kiln.</p></div>
     <div class="qa"><h3>What actually runs on my device?</h3><p>Everything that touches your content. Transcription, meeting titles, speaker-name suggestions and report generation all use Apple's own on-device frameworks. Speaker separation is the one piece that isn't Apple's: it uses FluidAudio, an open-source package whose Core ML models ship inside the app, so nothing is downloaded for it at runtime. None of it involves a server, ours or anyone else's.</p></div>
-    <div class="qa"><h3>How do calendar reminders work?</h3><p>They're off by default. Turn them on in Settings and grant calendar and notification access, and Kiln reads your upcoming events on-device to remind you to record. It never edits your events and never transmits them. Available on Mac, iPhone and iPad.</p></div>
+    <div class="qa"><h3>How do calendar reminders work?</h3><p>They're off until you turn them on. In Kiln 4.1 and later, Kiln offers them while you set up the app and, if you've never been asked for calendar access, in a banner at the top of your library; you can also turn them on in Settings → Permissions → <strong>Calendar Reminders</strong>. One tap asks for calendar and notification access together and schedules reminders for your meetings in the coming week. Kiln reads your upcoming events on-device and never edits or transmits them. When a reminder arrives, tap it and Kiln opens ready to record, with the meeting already named. If you declined either permission, that same Settings screen shows an <strong>Open Settings</strong> button that takes you to where you can turn it back on. Available on Mac, iPhone and iPad.</p></div>
     <div class="qa"><h3>If I delete Kiln, is my data gone?</h3><p>On iPhone and iPad, yes — deleting the app removes everything it stored, including meetings, audio, transcripts, reports, your settings and the diagnostic log. <strong>On a Mac it does not.</strong> The Mac app is sandboxed, so its data lives in <strong>~/Library/Containers/com.tushargupta.kiln/Data</strong> and that folder survives dragging the app to the Trash. If you want the data gone too, delete that folder yourself.</p></div>
   </div>
 
