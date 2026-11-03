@@ -3,9 +3,12 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#000000">
 <link rel="icon" href="../assets/icon.png">
+<link rel="apple-touch-icon" href="../assets/icon.png">
 <title>Kiln: AI 회의록</title>
-<meta name="description" content="Kiln은 회의를 전사와 요약, 실행 항목, Jira 스토리로 바꿉니다 — 모두 기기 안에서, 9개 언어로 처리됩니다. 클라우드도, 계정도, 구독도 없습니다.">
+<meta name="description" content="Kiln은 회의를 전사와 요약, 실행 항목, Jira 스토리로 바꿉니다 — 모두 Mac과 iPhone, iPad 안에서, 9개 언어로 처리됩니다. 무료이며 계정이 필요 없습니다.">
 
 <link rel="canonical" href="https://guptatushar10397.github.io/kiln-site/ko/index.html">
 <!-- Open Graph (WhatsApp, iMessage, Slack, Facebook, LinkedIn) -->
@@ -13,7 +16,7 @@
 <meta property="og:site_name" content="Kiln">
 <meta property="og:url" content="https://guptatushar10397.github.io/kiln-site/ko/index.html">
 <meta property="og:title" content="Kiln: AI 회의록">
-<meta property="og:description" content="회의를 전사와 요약, 실행 항목, Jira 스토리로 바꿉니다 — 모두 기기 안에서, 9개 언어로 처리됩니다. 클라우드도, 계정도, 구독도 없습니다.">
+<meta property="og:description" content="회의를 전사와 요약, 실행 항목, Jira 스토리로 바꿉니다 — 모두 기기 안에서, 9개 언어로 처리됩니다. 무료이며 계정이 필요 없습니다.">
 <meta property="og:image" content="https://guptatushar10397.github.io/kiln-site/assets/og-card.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -21,7 +24,7 @@
 <!-- Twitter / X -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Kiln: AI 회의록">
-<meta name="twitter:description" content="전사와 요약, 실행 항목, Jira 스토리 — 모두 기기 안에서, 9개 언어로 처리됩니다.">
+<meta name="twitter:description" content="전사와 요약, 실행 항목, Jira 스토리 — 기기 안에서, 9개 언어로 처리됩니다.">
 <meta name="twitter:image" content="https://guptatushar10397.github.io/kiln-site/assets/og-card.png">
 
 <!-- hreflang -->
@@ -40,10 +43,11 @@
 <link rel="stylesheet" href="../style.css">
 </head>
 <body>
-<nav class="nav"><div class="wrap">
+<a class="skip" href="#main">본문으로 건너뛰기</a>
+<nav class="nav" aria-label="주 메뉴"><div class="wrap">
   <a class="brand" href="index.html"><span class="app-icon" aria-hidden="true"></span> Kiln</a>
   <div class="nav-links">
-    <a href="index.html">홈</a>
+    <a href="index.html" aria-current="page">홈</a>
     <a href="privacy.html">개인정보 처리방침</a>
     <a href="support.html">지원</a>
     <details class="lang">
@@ -61,54 +65,172 @@
       </div>
     </details>
   </div>
+  <a class="nav-cta" href="https://apps.apple.com/app/id6784888925">다운로드</a>
 </div></nav>
 
+<main id="main">
+
+<!-- HERO -->
 <header class="hero"><div class="wrap">
-  <span class="app-icon" aria-hidden="true"></span>
-  <h1>Kiln</h1>
-  <p class="tagline">회의를 결과물로 구워냅니다.</p>
-  <p class="subtitle">Mac과 iPhone, iPad를 위한 100% 온디바이스 AI 회의 어시스턴트입니다. 회의를 녹음하거나 가져와 전사와 요약, 실행 항목, Jira 스토리로 바꿉니다 — Kiln은 오디오와 전사, 보고서를 어디로도 보내지 않습니다.</p>
-  <div class="badges">
-    <span class="badge"><span class="dot"></span> 100% 기기 안에서</span>
-    <span class="badge"><span class="dot"></span> 9개 언어</span>
-    <span class="badge"><span class="dot"></span> 계정 없음</span>
-    <span class="badge"><span class="dot"></span> 무료</span>
+  <p class="eyebrow"><span class="app-icon" aria-hidden="true"></span>Kiln</p>
+  <h1>회의를<br>결과물로 구워냅니다.</h1>
+  <p class="hero-sub">전사와 요약, Jira 스토리를 모두 Mac과 iPhone, iPad 안에서 만듭니다.</p>
+  <div class="cta-row">
+    <a class="appstore" href="https://apps.apple.com/app/id6784888925"><img src="../assets/app-store-badge.svg" alt="App Store에서 Kiln 다운로드" width="160" height="54"></a>
+    <a class="more" href="#how">작동 방식 보기</a>
   </div>
-  <div class="store-row">
-    <a class="appstore" href="https://apps.apple.com/app/id6784888925">
-      <img src="../assets/app-store-badge.svg" alt="App Store에서 Kiln 다운로드" height="56">
-    </a>
+  <p class="fine">무료 · 계정 없음 · 9개 언어</p>
+  <div class="hero-art">
+    <img src="../assets/img/ko/hero.jpg" width="2400" height="1340" fetchpriority="high"
+         alt="MacBook Pro에서는 회의 라이브러리를, iPhone에서는 화자별로 나뉜 전사를 보여 주는 Kiln.">
   </div>
 </div></header>
 
-<main>
-<section class="wrap">
-  <p class="section-title">Kiln이 하는 일</p>
-  <div class="cards">
-    <div class="card"><div class="ico">🎙️</div><h3>녹음</h3><p>실시간 파형을 보며 녹음하거나 MP3, M4A, WAV를 가져오세요. Kiln이 회의에서 나온 말로 제목까지 지어 주기도 합니다.</p></div>
-    <div class="card"><div class="ico">💬</div><h3>이해</h3><p>화자별로 나뉜 전사를 검색하고, 수정하고, 다시 들을 수 있습니다 — 전사에서 가져온 근거가 붙은, 기기 안에서 만드는 이름 제안과 함께.</p></div>
-    <div class="card"><div class="ico">📋</div><h3>생성</h3><p>8가지 보고서 — 요약, 실행 항목, Jira 스토리, 결정 사항, 회의록, 메일, 릴리스 노트 — 모두 기기 안에서.</p></div>
-  </div>
-</section>
+<!-- INTRO -->
+<section class="section"><div class="wrap">
+  <p class="statement"><strong>회의를 녹음하거나 가져오세요.</strong> Kiln이 목소리를 구분하고, 전사를 작성하고, 어차피 직접 쓰려던 문서로 바꿔 드립니다. <strong>이 모든 일이 기기 안에서 일어납니다.</strong> 오디오와 전사, 보고서는 기기를 벗어나지 않습니다.</p>
+</div></section>
 
-<section class="wrap">
-  <div class="callout">
-    <h2>9개 언어</h2>
-    <p>Kiln은 영어, 스페인어, 프랑스어, 독일어, 이탈리아어, 브라질 포르투갈어, 중국어(표준어), 일본어, 한국어를 전사합니다 — 그리고 보고서는 회의에서 실제로 말한 언어 그대로 나옵니다. 영어로 번역하지 않습니다. Kiln의 화면 자체도 이 9개 언어로 제공되며, 기기 언어와 별개로 설정할 수 있습니다.</p>
+<!-- HOW IT WORKS -->
+<section class="section band" id="how"><div class="wrap center">
+  <p class="eyebrow">작동 방식</p>
+  <h2 class="h2">녹음. 소성. 전달.</h2>
+  <div class="steps">
+    <div class="step">
+      <figure><img src="../assets/img/ko/step-record.jpg" width="760" height="1456" loading="lazy"
+        alt="타이머와 실시간 파형을 표시하며 회의를 녹음하는 Kiln."></figure>
+      <span class="num" aria-hidden="true">1</span>
+      <h3>녹음</h3>
+      <p>실시간 파형을 보며 녹음하거나 MP3, M4A, WAV 파일을 가져오세요. 제목을 비워 두면 Kiln이 회의에서 나온 말로 이름을 지어 줍니다.<sup class="fn"><a href="#fn1" aria-label="주석 1">1</a></sup></p>
+    </div>
+    <div class="step">
+      <figure><img src="../assets/img/ko/step-transcript.jpg" width="760" height="1456" loading="lazy"
+        alt="화자별로 나뉘고 타임스탬프가 붙은 Kiln의 전사."></figure>
+      <span class="num" aria-hidden="true">2</span>
+      <h3>소성</h3>
+      <p>Kiln이 화자를 구분하고, 검색하고 수정하고 다시 들을 수 있는 전사를 작성합니다. 각 사람이 한 말을 근거로 누가 누구인지 제안할 수도 있습니다.<sup class="fn"><a href="#fn1" aria-label="주석 1">1</a></sup></p>
+    </div>
+    <div class="step">
+      <figure><img src="../assets/img/ko/step-outputs.jpg" width="760" height="1456" loading="lazy"
+        alt="8가지 보고서 유형이 있는 Kiln의 보고서 선택 화면."></figure>
+      <span class="num" aria-hidden="true">3</span>
+      <h3>전달</h3>
+      <p>보고서를 고르면 Kiln이 기기 안에서 작성합니다. Markdown으로 복사하거나 PDF로 공유하세요.<sup class="fn"><a href="#fn1" aria-label="주석 1">1</a></sup></p>
+    </div>
   </div>
-</section>
+</div></section>
 
-<section class="wrap">
-  <div class="callout">
-    <h2>설계부터 비공개</h2>
-    <p>클라우드도, 계정도, 구독도, 분석도 없습니다. Kiln은 녹음과 전사, 보고서를 어디로도 보내지 않습니다 — 모두 기기 안 앱의 비공개 영역에 남습니다. 그것들을 밖으로 옮기는 것은 오직 사용자뿐입니다. 직접 공유하거나 내보내는 것, 그리고 기기 자체의 백업입니다.</p>
+<!-- REPORTS -->
+<section class="section"><div class="wrap center">
+  <p class="eyebrow">보고서</p>
+  <h2 class="h2">8가지 보고서. 탭 한 번.</h2>
+  <p class="lede">모든 보고서는 전사를 바탕으로, 회의에서 쓴 언어로 작성됩니다.<sup class="fn"><a href="#fn1" aria-label="주석 1">1</a></sup></p>
+  <div class="reports" role="list">
+    <div class="report" role="listitem"><h3>빠른 요약</h3><p>1분 만에 핵심을 — 개요, 주제, 결론</p></div>
+    <div class="report" role="listitem"><h3>상세 노트</h3><p>다룬 모든 개념을 예시와 함께 깊이 있게</p></div>
+    <div class="report" role="listitem"><h3>실행 항목</h3><p>담당자와 우선순위가 있는 작업</p></div>
+    <div class="report" role="listitem"><h3>Jira 스토리</h3><p>스프린트에 바로 쓸 수 있는 에픽, 스토리, 수락 기준</p></div>
+    <div class="report" role="listitem"><h3>기술적 결정 사항</h3><p>근거, 영향, 위험이 함께 정리된 결정 사항</p></div>
+    <div class="report" role="listitem"><h3>회의록</h3><p>참석자, 안건, 논의, 결과</p></div>
+    <div class="report" role="listitem"><h3>메일 초안</h3><p>바로 보낼 수 있는 격식 있는 후속 메일</p></div>
+    <div class="report" role="listitem"><h3>릴리스 노트</h3><p>새로운 기능, 개선, 수정, 알려진 문제</p></div>
   </div>
-</section>
+</div></section>
 
-<section class="wrap">
-  <p style="color:var(--muted-2);font-size:14px;text-align:center;max-width:620px;margin:0 auto">macOS&nbsp;26 또는 iOS&nbsp;26이 필요합니다. 전사는 Apple의 온디바이스 음성 모델을 사용하므로 최신 하드웨어가 필요하고, 보고서 생성에는 Apple&nbsp;Intelligence를 켜 두어야 합니다. 어느 쪽이든 실행할 수 없는 기기라면 Kiln이 분명하게 알려 드립니다 — <a href="support.html">지원</a>을 참고하세요.</p>
-</section>
+<!-- PRIVACY -->
+<section class="section band"><div class="wrap">
+  <div class="center">
+    <p class="eyebrow">개인정보</p>
+    <h2 class="h2">설계부터 프라이버시.<br>말뿐인 약속이 아닙니다.</h2>
+    <p class="lede">Kiln에는 자체 서버가 없습니다. 회의는 녹음된 곳에서 처리되고, 그곳에 그대로 남습니다.</p>
+  </div>
+  <div class="facts">
+    <div class="fact">
+      <svg class="glyph" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="M9 9h6v6H9z"/><path d="M9 1.5v2.5M15 1.5v2.5M9 20v2.5M15 20v2.5M1.5 9H4M1.5 15H4M20 9h2.5M20 15h2.5"/></svg>
+      <h3>모든 것이 기기에서 실행됩니다.</h3>
+      <p>전사와 화자 분리는 물론 제목과 보고서 생성까지 모두 기기에서 처리됩니다. Apple의 온디바이스 프레임워크와 앱에 포함된 화자 분리 모델을 사용합니다.</p>
+    </div>
+    <div class="fact">
+      <svg class="glyph" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4M3 3l18 18"/></svg>
+      <h3>Mac 앱은 인터넷에 연결할 수 없습니다.</h3>
+      <p>네트워크에 연결할 권한 없이 배포되므로, 어디에도 아무것도 보낼 수 없습니다.</p>
+    </div>
+    <div class="fact">
+      <svg class="glyph" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.6-7 8-7s8 3 8 7"/><path d="M3 3l18 18"/></svg>
+      <h3>계정 없음. 분석 없음.</h3>
+      <p>가입할 것이 없고, 추적·광고·분석 코드도 들어 있지 않습니다.</p>
+    </div>
+    <div class="fact">
+      <svg class="glyph" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h16M9 7V4h6v3M6 7l1 13h10l1-13"/><path d="M10 11v6M14 11v6"/></svg>
+      <h3>삭제하면 정말 삭제됩니다.</h3>
+      <p>회의를 삭제하면 오디오와 전사, 화자 기록은 물론 그 회의로 만든 모든 보고서까지 함께 삭제됩니다.</p>
+    </div>
+  </div>
+  <p class="center"><a class="more" href="privacy.html">개인정보 처리방침 읽기</a></p>
+</div></section>
+
+<!-- LANGUAGES -->
+<section class="section"><div class="wrap center">
+  <p class="eyebrow">언어</p>
+  <h2 class="h2">9개 언어.<br>보고서도 같은 언어로.</h2>
+  <p class="lede">Kiln은 9개 언어를 전사하고, 각 보고서를 영어로 번역하지 않고 회의에서 쓴 언어 그대로 작성합니다.<sup class="fn"><a href="#fn2" aria-label="주석 2">2</a></sup> Kiln의 화면도 9개 언어를 모두 지원하며, 기기 언어와 별개로 설정할 수 있습니다.</p>
+  <ul class="langs" aria-label="지원 언어">
+    <li lang="en">English</li><li lang="es">Español</li><li lang="fr">Français</li>
+    <li lang="de">Deutsch</li><li lang="it">Italiano</li><li lang="pt-BR">Português</li>
+    <li lang="zh-Hans">中文</li><li lang="ja">日本語</li><li lang="ko">한국어</li>
+  </ul>
+</div></section>
+
+<!-- REMINDERS (4.1) -->
+<section class="section band"><div class="wrap">
+  <div class="split">
+    <figure><img src="../assets/img/ko/reminders.jpg" width="760" height="1456" loading="lazy"
+      alt="알림 켜기 버튼이 있는 Kiln의 회의 알림 카드."></figure>
+    <div class="text">
+      <p class="eyebrow">Kiln 4.1의 새로운 기능</p>
+      <h2 class="h2">회의 노트를 놓치지 마세요.</h2>
+      <p>기기의 캘린더와 연동하면 회의 시작 전에 제때 알림을 받을 수 있습니다. 어떤 데이터도 기기를 벗어나지 않습니다.</p>
+      <p>Kiln이 제안할 때 탭 한 번으로 알림을 켜세요. 알림을 탭하면 회의 이름이 입력된 채로 Kiln이 열려, 바로 녹음할 수 있습니다.</p>
+    </div>
+  </div>
+</div></section>
+
+<!-- MAC, IPHONE, IPAD -->
+<section class="section"><div class="wrap">
+  <div class="center">
+    <p class="eyebrow">Mac, iPhone, iPad</p>
+    <h2 class="h2">회의하는 기기마다<br>꼭 맞게 만들었습니다.</h2>
+    <p class="lede">Mac과 iPhone, iPad를 위한 네이티브 앱으로, 기기마다 어울리는 세심함을 담았습니다.</p>
+  </div>
+  <div class="wide-art">
+    <img src="../assets/img/ko/mac-report.jpg" width="2000" height="1310" loading="lazy"
+      alt="MacBook Pro의 Kiln에 열려 있는, 기기 안에서 생성된 빠른 요약 보고서.">
+  </div>
+  <ul class="ticks narrow" style="margin-left:auto;margin-right:auto">
+    <li>Mac에서는 앱 어디에서나 <kbd>⌘N</kbd>으로 녹음을 시작하고 <kbd>⌘I</kbd>로 오디오를 가져올 수 있습니다.</li>
+    <li>iPhone에서는 실시간 활동이 잠금 화면과 다이내믹 아일랜드에 정지 버튼과 함께 녹음을 표시합니다.</li>
+    <li>회의 알림은 세 기기 모두에서 작동합니다.</li>
+  </ul>
+</div></section>
+
+<!-- FINAL CTA -->
+<section class="section band final"><div class="wrap center">
+  <h2 class="h2">다음 회의부터<br>시작해 보세요.</h2>
+  <p class="lede">Mac과 iPhone, iPad용으로 App Store에서 무료로 받을 수 있습니다.<sup class="fn"><a href="#fn3" aria-label="주석 3">3</a></sup></p>
+  <div class="store-row">
+    <a class="appstore" href="https://apps.apple.com/app/id6784888925"><img src="../assets/app-store-badge.svg" alt="App Store에서 Kiln 다운로드" width="160" height="54"></a>
+  </div>
+</div></section>
+
 </main>
+
+<aside class="footnotes" aria-label="주석"><div class="wrap">
+  <ol>
+    <li id="fn1">보고서 생성, 자동 회의 제목, 화자 이름 제안에는 Apple Intelligence가 사용되며, 기기가 이를 지원하고 Apple Intelligence가 켜져 있어야 합니다. 녹음, 가져오기, 전사, 화자 분리에는 필요하지 않습니다.</li>
+    <li id="fn2">전사는 Apple의 온디바이스 음성 모델을 사용합니다. 기기가 언어별 모델을 한 번 다운로드하며, Kiln이 직접 무언가를 받아 오는 일은 없습니다.</li>
+    <li id="fn3">macOS 26, iOS 26 또는 iPadOS 26이 필요하며, Apple의 온디바이스 음성 모델을 실행할 수 있는 하드웨어여야 합니다. 실행할 수 없는 기기라면 Kiln이 분명하게 알려 드립니다. <a href="support.html">지원</a></li>
+  </ol>
+</div></aside>
 
 <footer><div class="wrap">
   <span>© 2026 Tushar Gupta</span>
