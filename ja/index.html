@@ -157,7 +157,7 @@
     <div class="fact">
       <svg class="glyph" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4M3 3l18 18"/></svg>
       <h3>Mac 版は、ネットワークに接続できません。</h3>
-      <p>ネットワーク接続の権限を持たないまま配布されているため、どこにも何も送信できません。</p>
+      <p>ネットワーク接続の権限を持たないまま配布されているため、Kiln 自身はどこにも接続できず、アップデートの確認すらできません。</p>
     </div>
     <div class="fact">
       <svg class="glyph" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.6-7 8-7s8 3 8 7"/><path d="M3 3l18 18"/></svg>
@@ -167,7 +167,7 @@
     <div class="fact">
       <svg class="glyph" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h16M9 7V4h6v3M6 7l1 13h10l1-13"/><path d="M10 11v6M14 11v6"/></svg>
       <h3>削除は、本当に削除。</h3>
-      <p>会議を削除すると、その音声、文字起こし、話者の記録、そこから作られたすべてのレポートも一緒に削除されます。</p>
+      <p>会議を削除すると、Kiln はその音声、文字起こし、話者の記録、そこから作られたすべてのレポートを削除します。すでに作成済みのバックアップの中にあるコピーは、そのバックアップが置き換えられるまでそこに残ります。</p>
     </div>
   </div>
   <p class="center"><a class="more" href="privacy.html">プライバシーポリシーを読む</a></p>
@@ -193,7 +193,7 @@
     <div class="text">
       <p class="eyebrow">Kiln 4.1 の新機能</p>
       <h2 class="h2">会議のメモを逃さない。</h2>
-      <p>Kiln は端末上でカレンダーを読み取り、会議が始まる直前に通知します。予定を編集することはなく、予定が端末の外に出ることもありません。</p>
+      <p>Kiln は端末上でカレンダーを読み取り、会議が始まる直前に通知します。予定を編集することはなく、Kiln が予定をどこかへ送ることもありません。</p>
       <p>リマインダーをタップすれば、会議名が入った状態で Kiln が開き、すぐに録音を始められます。</p>
     </div>
   </div>
@@ -227,7 +227,7 @@
 <aside class="footnotes" aria-label="注記"><div class="wrap">
   <ol>
     <li id="fn1">レポートの生成、会議の自動タイトル、話者名の提案には Apple Intelligence を使用します。お使いの端末が対応していて、オンになっている必要があります。録音、読み込み、文字起こし、話者分離には必要ありません。</li>
-    <li id="fn2">文字起こしには Apple の端末内音声モデルを使用します。各言語のモデルは端末が一度だけダウンロードし、Kiln 自身がモデルを取得することはありません。</li>
+    <li id="fn2">文字起こしには Apple の端末内音声モデルを使用します。言語のモデルは Kiln が初めて必要としたときに端末がダウンロードし、Kiln 自身がモデルを取得することはありません。</li>
     <li id="fn3">macOS 26、iOS 26、または iPadOS 26 と、Apple の端末内音声モデルを実行できるハードウェアが必要です。実行できない端末では、Kiln がその旨をはっきりとお伝えします。<a href="support.html">サポート</a></li>
   </ol>
 </div></aside>

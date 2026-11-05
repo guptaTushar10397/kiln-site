@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="icon" href="assets/icon.png">
 <title>Privacy Policy — Kiln</title>
-<meta name="description" content="Kiln processes everything on your device. No account, no backend, no analytics in the app — and your recordings, transcripts, and reports are never sent anywhere.">
+<meta name="description" content="Kiln processes everything on your device. No account, no backend, no analytics in the app — and Kiln never sends your recordings, transcripts, or reports anywhere.">
 <link rel="canonical" href="https://guptatushar10397.github.io/kiln-site/privacy.html">
 
 <!-- hreflang -->
@@ -51,27 +51,27 @@
 
 <main class="page" id="main"><div class="wrap">
   <h1>Privacy Policy</h1>
-  <p class="updated">Last updated 3 November 2026 · Kiln 4.1 for iPhone, iPad, and Mac</p>
+  <p class="updated">Last updated 5 November 2026 · Kiln 4.1 for iPhone, iPad, and Mac</p>
 
   <p class="lead">Kiln does its work on your device. It has no backend of its own, no account, and no analytics or tracking code, and it never sends your recordings, transcripts, or reports anywhere. The rest of this page is the detail behind that sentence, including the few places where something does touch the network.</p>
 
   <h2>Your content stays on your device</h2>
-  <p>Audio recordings and imported files are stored in Kiln's own storage inside the app's sandbox; transcripts, speaker records, and generated reports live in its database alongside them. Kiln never uploads any of it, and there is no code in the app that could.</p>
+  <p>Audio recordings and imported files are stored in Kiln's own storage inside the app's sandbox; transcripts, speaker records, and generated reports live in its database alongside them. Kiln never uploads any of it. Its only network request is the iPhone and iPad version check described under Network access, and that carries nothing of yours.</p>
   <p>Three things can move that content off the device, and all three are yours:</p>
   <ul>
     <li><strong>You share or export it.</strong> Kiln has Share and Export for recordings, and share or PDF export for reports. Once you AirDrop, mail, or upload a file yourself, where it goes is between you and whatever you sent it to.</li>
-    <li><strong>You copy it to the clipboard.</strong> Copy Transcript and a report's Copy button put that text on the system clipboard, where any app you paste into can read it. On a Mac the clipboard is shared with Handoff-enabled devices signed in to your Apple Account.</li>
+    <li><strong>You copy it to the clipboard.</strong> Copy Transcript and a report's Copy button put that text on the system clipboard, where any app you paste into can read it. With Handoff turned on, Universal Clipboard can also make it available on your other nearby Apple devices signed in to the same Apple Account.</li>
     <li><strong>Your device backs itself up.</strong> Kiln's files sit in ordinary app storage and are not excluded from backup, so they are included in your device's backups like other app data: iCloud Backup or a computer backup on iPhone and iPad, and whatever backup you run on a Mac. A computer backup is encrypted only if you have turned on “Encrypt local backup”. Those backups are handled by Apple and by you. They never come to us, and we cannot see them.</li>
   </ul>
 
+  <p>While you record on iPhone or iPad, the meeting's title appears in a Live Activity on your Lock Screen and in the Dynamic Island. Meeting reminders show the event's title too, including on the Lock Screen if your notification previews are set to Always. Your device may also show these on a paired Apple Watch. They are created on your device and never pass through us.</p>
   <h2>No account, no backend, no analytics</h2>
   <p>Kiln requires no sign-in and has no server of its own. It contains no analytics, tracking, or advertising code, and no third-party SDK that collects data about you or what you do in the app.</p>
 
   <h2>What reaches us</h2>
-  <p>Kiln itself sends us nothing. The only thing that reaches us directly is what you choose to put in an email. Three indirect channels are worth naming, because they exist for every app on the App Store:</p>
+  <p>Kiln itself sends us nothing. The only thing that reaches us directly is what you choose to put in an email. Two indirect channels are worth naming:</p>
   <ul>
-    <li><strong>Apple's App Store reports.</strong> As the developer, we see the same aggregate figures Apple gives every developer — impressions, downloads, sessions, retention — plus crash reports from people who have turned on sharing those with developers in their system settings. These come from Apple, not from Kiln, and they are not tied to you.</li>
-    <li><strong>This support site.</strong> Settings → Help &amp; Feedback → Support Page and Privacy Policy open pages on this site, and Share Kiln shares its address. The site is hosted on GitHub Pages, so visiting it is an ordinary web request and its traffic figures show us visit and referrer counts, the way any website's do.</li>
+    <li><strong>This support site.</strong> Settings → Help &amp; Feedback → Support and Privacy Policy open pages on this site, and Share Kiln shares its address. The site is hosted on GitHub Pages. Like any web host, GitHub receives your IP address and browser details when you visit, under GitHub's own privacy statement. The site itself uses no cookies, scripts, analytics or third-party resources.</li>
     <li><strong>App Store ratings and reviews.</strong> Kiln occasionally offers to let you rate it, and Settings → Spread the Word → Rate Kiln opens the App Store's review composer. A review you write is public and reaches us in App Store Connect under the nickname you chose — the same as for any other app.</li>
   </ul>
 
@@ -80,9 +80,9 @@
   <p>You will also see system permission alerts along the way — the microphone one, for example, and the calendar and notification ones if you turn on meeting reminders. Whichever alerts your device shows, none of them changes where your audio goes: Kiln transcribes with Apple's on-device speech models, so your audio and its transcript are processed on your device and are not sent to a speech service.</p>
 
   <h2>Network access</h2>
-  <p>The Mac app never opens a network connection itself. It ships sandboxed without <strong>com.apple.security.network.client</strong>, the entitlement that would permit an outbound connection, so a request from Kiln is not possible. The one thing that does use the network on a Mac is macOS itself, fetching a speech model when you pick a new transcription language — see Model downloads below.</p>
-  <p>On iPhone and iPad, the only request Kiln makes itself is to ask Apple's App Store lookup service whether a newer version of Kiln has been published. (As on a Mac, the system separately fetches Apple's speech model for a language the first time you use it — see Model downloads below.) It runs once when the app launches, and after that no more than once every fifteen minutes when you return to the app — unless a check fails to complete, in which case it may try again the next time you come back. The only thing Kiln puts in that request is its own bundle identifier: nothing about you, and nothing about your content. Like any connection to Apple, it carries your IP address and the standard system networking header your device sends, and it goes to Apple and no one else. It fails silently if it cannot complete, and all it ever feeds is a passive row in Settings and a banner you can dismiss. Updates are never forced.</p>
-  <p>Kiln's speaker-separation library is open source and, in general, is capable of downloading models from the internet. Kiln ships those models inside the app and only ever points the library at those bundled files; if they were missing, Kiln reports an error rather than fetching anything.</p>
+  <p>The Mac app never opens a network connection itself. It ships sandboxed without <strong>com.apple.security.network.client</strong>, the entitlement that would permit an outbound connection, so a request from Kiln is not possible. Kiln's only part in network traffic is to ask macOS for a speech model when it needs a language whose model isn't installed yet. macOS then downloads it from Apple (see Model downloads below). Anything else, such as sharing a file, sending a support email or opening a link, is done by another app or service at your request.</p>
+  <p>On iPhone and iPad, the only request Kiln makes itself is to ask Apple's App Store lookup service whether a newer version of Kiln has been published. (As on a Mac, the system separately fetches Apple's speech model for a language the first time you use it — see Model downloads below.) It runs once when the app launches, and after that no more than once every fifteen minutes when you return to the app — unless a check fails to complete, in which case it may try again the next time you come back. The only thing Kiln puts in that request is its own bundle identifier: nothing about you, and nothing about your content. Like any connection to Apple, it carries your IP address and the standard headers your device's networking adds, such as a user agent naming the app and system version, and your preferred languages, and it goes to Apple and no one else. It fails silently if it cannot complete, and all it ever feeds is a passive row in Settings and a banner you can dismiss. Updates are never forced.</p>
+  <p>Kiln's speaker-separation library is open source and, in general, is capable of downloading models from the internet. Kiln ships those models inside the app and only ever points the library at those bundled files; if they were ever missing, Kiln would fall back to a simpler on-device mode that doesn't separate speakers. It never fetches them.</p>
 
   <h2>All processing is local</h2>
   <p>Transcription, speaker separation, meeting titles, speaker-name suggestions, and report generation all run entirely on your device. Transcription, titles, speaker-name suggestions, and reports use Apple's own on-device frameworks; speaker separation uses FluidAudio, an open-source package whose Core ML models ship inside the app. Nothing in that list involves a server, and your content is never sent to us or to any third party for processing.</p>
@@ -93,19 +93,19 @@
   <p>The speaker-separation models are bundled inside the app, so nothing is downloaded for them. Report generation uses your device's own Apple Intelligence model: Kiln only checks whether it is available, and never downloads, ships, or replaces it. Whether a device qualifies for Apple Intelligence is Apple's decision, not ours — Settings → Apple Intelligence on your device tells you, and Apple's own support pages list the requirements. On-device transcription has a hardware requirement of its own; where a device cannot run it, Kiln says so plainly on the Languages screen instead of failing quietly.</p>
 
   <h2>Calendar and reminders (optional)</h2>
-  <p>Meeting reminders are off until you switch them on. When you do, Kiln asks for calendar access and for permission to send notifications, then reads your upcoming events on this device to schedule local reminders ahead of those meetings. Kiln never edits your events, and they never leave this device.</p>
+  <p>Meeting reminders are off until you switch them on. When you do, Kiln asks for calendar access and for permission to send notifications, then reads your upcoming events on this device to schedule local reminders ahead of those meetings. To tell meetings from other events, it looks at each event's title, time, number of attendees, and its link, location and notes (to spot a video-call link). Apple's calendar permission has no read-only option, so Kiln asks for full access, but it only reads: it never creates, edits or deletes an event, and it never sends your events anywhere.</p>
 
   <h2>Contacting support (optional)</h2>
   <p>If you use Report an Issue (Settings → Help &amp; Feedback → Report an Issue) or email us, the message opens in a mail composer using your own email account — or as a draft in your mail app if no account is set up, in which case the attachments can't come along. Nothing is sent automatically: you review it and send it yourself. Two attachment options are switched on by default, and you can turn either off before sending:</p>
   <ul>
     <li><strong>Device info</strong> — app version, hardware model identifier, OS version, and memory size, added to the body of the email.</li>
-    <li><strong>Diagnostics</strong> — a small breadcrumb log, plus Apple's crash and performance reports (MetricKit payloads). The log holds only technical details: app version, device, OS version, thermal state, which processing stages ran and how they ended, counts, the transcript's length as a character count, the language code, the report type, and error types. Apple's payloads hold call stacks and performance figures. Neither contains your audio, transcripts, meeting titles, speaker names, or report content.</li>
+    <li><strong>Diagnostics</strong> — a small breadcrumb log, plus Apple's crash and performance reports (MetricKit payloads). The log holds only technical details: timestamps, app version, device model, OS version, memory size, thermal state, which processing stages ran and how they ended, counts, the transcript's length as a character count, the language code, the report type, when the rating prompt was shown or dismissed, and error types and codes. Apple's payloads hold call stacks, performance figures and basic device details such as model, OS version and region format. Apple designs them not to include personal data, and Kiln adds nothing of yours to them. Neither contains your audio, transcripts, meeting titles, speaker names, or report content.</li>
   </ul>
-  <p>You can preview the diagnostic log in the app before you send it. We use whatever you send solely to investigate your issue.</p>
+  <p>You can preview the diagnostic log in the app before you send it. We use whatever you send solely to investigate your issue. Support email is hosted by Gmail (Google), so messages you send us are stored by Google under its privacy policy. We keep a support conversation only as long as we need it to help you, and we'll delete it whenever you ask at the address below.</p>
 
   <h2>Deletion</h2>
-  <p>Deleting a meeting deletes its audio recording, its transcript, its speaker records, and every report generated from it. Settings → Storage → Delete All Meetings… removes every meeting the same way, in one step.</p>
-  <p>The diagnostic log and Apple's crash and performance reports sit outside your meetings, so neither of those actions removes them. They are size-capped, they contain no content of yours, and they are never sent anywhere unless you attach them to a support email yourself.</p>
+  <p>Deleting a meeting deletes its audio recording, its transcript, its speaker records, and every report generated from it. Settings → Storage → Delete All Meetings… removes every meeting the same way, in one step. Kiln can't undo a deletion, though a backup taken before you deleted a meeting still holds it until that backup is replaced or deleted. Copies Kiln made for sharing are temporary and are cleared the next time you open Kiln.</p>
+  <p>The diagnostic log and Apple's crash and performance reports sit outside your meetings, so neither of those actions removes them. The log is trimmed to its most recent 64 KB each time Kiln starts, and only the 24 most recent crash and performance reports are kept. Neither contains content of yours. Kiln never sends them anywhere: only you can, by attaching them to a support email. Like other app data, they are included in your device's backups.</p>
   <p>Uninstalling works differently on each platform:</p>
   <ul>
     <li><strong>iPhone and iPad</strong> — deleting the app removes everything it stored on the device, including the diagnostic files. Copies inside a backup you have already taken stay in that backup until it is replaced or deleted.</li>
@@ -113,10 +113,10 @@
   </ul>
 
   <h2>Children's privacy</h2>
-  <p>Kiln collects nothing from anyone, including children. There is no account, no sign-in, and no way for the app to send us anything by itself. Everything it produces stays on your device unless you share or email it yourself.</p>
+  <p>The Kiln app collects nothing from anyone, including children. There is no account, no sign-in, and no way for the app to send us anything by itself. Kiln never sends what it produces anywhere. Only you can move it, by sharing, copying or emailing it, or through your device's backups.</p>
 
   <h2>Contact</h2>
-  <p>Kiln itself collects no personal data, so there is nothing for us to sell, share, or disclose; anything you choose to email us is used only to respond to you and investigate your issue. If you have any questions about this policy, email <a href="mailto:support.kiln@gmail.com">support.kiln@gmail.com</a>.</p>
+  <p>The Kiln app collects no personal data, so we have no app data to sell or share. If you email us, we use your message and anything you attach only to respond to you and investigate your issue, and we never sell or share it. If you have any questions about this policy, email <a href="mailto:support.kiln@gmail.com">support.kiln@gmail.com</a>.</p>
 </div></main>
 
 <footer><div class="wrap">
