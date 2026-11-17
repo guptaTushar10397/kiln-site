@@ -3,9 +3,12 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#000000">
 <link rel="icon" href="../assets/icon.png">
+<link rel="apple-touch-icon" href="../assets/icon.png">
 <title>Kiln: KI-Berichte aus Besprechungen</title>
-<meta name="description" content="Kiln macht aus deinen Besprechungen Transkripte, Zusammenfassungen, Aufgaben und Jira-Tickets – vollständig auf deinem Gerät verarbeitet, in neun Sprachen. Keine Cloud, kein Account, kein Abo.">
+<meta name="description" content="Nimm eine Besprechung auf oder importiere sie und erhalte Transkript, Zusammenfassung und Aufgaben – zu 100 % auf deinem Mac, iPhone oder iPad erstellt. Kostenlos, kein Account, neun Sprachen.">
 
 <link rel="canonical" href="https://guptatushar10397.github.io/kiln-site/de/index.html">
 <!-- Open Graph (WhatsApp, iMessage, Slack, Facebook, LinkedIn) -->
@@ -13,7 +16,7 @@
 <meta property="og:site_name" content="Kiln">
 <meta property="og:url" content="https://guptatushar10397.github.io/kiln-site/de/index.html">
 <meta property="og:title" content="Kiln: KI-Berichte aus Besprechungen">
-<meta property="og:description" content="Mach aus Besprechungen Transkripte, Zusammenfassungen, Aufgaben und Jira-Tickets – vollständig auf deinem Gerät verarbeitet, in neun Sprachen. Keine Cloud, kein Account, kein Abo.">
+<meta property="og:description" content="Nimm eine Besprechung auf oder importiere sie und erhalte Transkript, Zusammenfassung und Aufgaben – zu 100 % auf deinem Mac, iPhone oder iPad erstellt. Kostenlos, kein Account, neun Sprachen.">
 <meta property="og:image" content="https://guptatushar10397.github.io/kiln-site/assets/og-card.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -21,7 +24,7 @@
 <!-- Twitter / X -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Kiln: KI-Berichte aus Besprechungen">
-<meta name="twitter:description" content="Transkripte, Zusammenfassungen, Aufgaben und Jira-Tickets – auf dem Gerät verarbeitet, in neun Sprachen.">
+<meta name="twitter:description" content="Nimm eine Besprechung auf oder importiere sie und erhalte Transkript, Zusammenfassung und Aufgaben – zu 100 % auf deinem Mac, iPhone oder iPad erstellt. Kostenlos, kein Account, neun Sprachen.">
 <meta name="twitter:image" content="https://guptatushar10397.github.io/kiln-site/assets/og-card.png">
 
 <!-- hreflang -->
@@ -40,10 +43,11 @@
 <link rel="stylesheet" href="../style.css">
 </head>
 <body>
-<nav class="nav"><div class="wrap">
+<a class="skip" href="#main">Zum Inhalt springen</a>
+<nav class="nav" aria-label="Hauptnavigation"><div class="wrap">
   <a class="brand" href="index.html"><span class="app-icon" aria-hidden="true"></span> Kiln</a>
   <div class="nav-links">
-    <a href="index.html">Start</a>
+    <a href="index.html" aria-current="page">Start</a>
     <a href="privacy.html">Datenschutz</a>
     <a href="support.html">Support</a>
     <details class="lang">
@@ -61,54 +65,172 @@
       </div>
     </details>
   </div>
+  <a class="nav-cta" href="https://apps.apple.com/app/id6784888925">Laden</a>
 </div></nav>
 
+<main id="main">
+
+<!-- HERO -->
 <header class="hero"><div class="wrap">
-  <span class="app-icon" aria-hidden="true"></span>
-  <h1>Kiln</h1>
-  <p class="tagline">Besprechungen, zu Ergebnissen gebrannt.</p>
-  <p class="subtitle">Ein KI-Besprechungsassistent für Mac, iPhone und iPad, der zu 100 % auf dem Gerät läuft. Nimm eine Besprechung auf oder importiere sie und mach daraus Transkripte, Zusammenfassungen, Aufgaben und Jira-Tickets – Kiln sendet dein Audio, deine Transkripte oder Berichte niemals irgendwohin.</p>
-  <div class="badges">
-    <span class="badge"><span class="dot"></span> 100 % auf dem Gerät</span>
-    <span class="badge"><span class="dot"></span> Neun Sprachen</span>
-    <span class="badge"><span class="dot"></span> Kein Account</span>
-    <span class="badge"><span class="dot"></span> Kostenlos</span>
+  <p class="eyebrow"><span class="app-icon" aria-hidden="true"></span>Kiln</p>
+  <h1>Besprechungen,<br>zu Ergebnissen gebrannt.</h1>
+  <p class="hero-sub">Transkripte, Zusammenfassungen und Jira-Tickets, vollständig erstellt auf deinem Mac, iPhone und iPad.</p>
+  <div class="cta-row">
+    <a class="appstore" href="https://apps.apple.com/app/id6784888925"><img src="../assets/app-store-badge.svg" alt="Kiln im App Store laden" width="160" height="54"></a>
+    <a class="more" href="#how">So funktioniert’s</a>
   </div>
-  <div class="store-row">
-    <a class="appstore" href="https://apps.apple.com/app/id6784888925">
-      <img src="../assets/app-store-badge.svg" alt="Kiln im App Store laden" height="56">
-    </a>
+  <p class="fine">Kostenlos · Kein Account · Neun Sprachen</p>
+  <div class="hero-art">
+    <img src="../assets/img/de/hero.jpg" width="2400" height="1340" fetchpriority="high"
+         alt="Kiln auf einem MacBook Pro mit der Besprechungsbibliothek und auf einem iPhone mit einem nach Sprechern getrennten Transkript.">
   </div>
 </div></header>
 
-<main>
-<section class="wrap">
-  <p class="section-title">Was Kiln macht</p>
-  <div class="cards">
-    <div class="card"><div class="ico">🎙️</div><h3>Aufnehmen</h3><p>Nimm mit Live-Wellenform auf oder importiere MP3, M4A oder WAV. Kiln kann die Besprechung sogar nach ihren eigenen Worten benennen.</p></div>
-    <div class="card"><div class="ico">💬</div><h3>Verstehen</h3><p>Ein nach Sprechern getrenntes Transkript, das du durchsuchen, bearbeiten und abspielen kannst – mit Namensvorschlägen auf dem Gerät, belegt durch das Transkript.</p></div>
-    <div class="card"><div class="ico">📋</div><h3>Erzeugen</h3><p>Acht Berichtsarten – Zusammenfassung, Aufgaben, Jira-Tickets, Entscheidungen, Sitzungsprotokoll, E-Mail, Release Notes – alles auf dem Gerät.</p></div>
-  </div>
-</section>
+<!-- INTRO -->
+<section class="section"><div class="wrap">
+  <p class="statement"><strong>Nimm eine Besprechung auf oder importiere sie.</strong> Kiln trennt die Stimmen, schreibt das Transkript und macht daraus das Dokument, das du ohnehin geschrieben hättest. <strong>Alles passiert auf deinem Gerät.</strong> Kiln sendet Audio, Transkript und Bericht nirgendwohin.</p>
+</div></section>
 
-<section class="wrap">
-  <div class="callout">
-    <h2>Neun Sprachen</h2>
-    <p>Kiln transkribiert Englisch, Spanisch, Französisch, Deutsch, Italienisch, brasilianisches Portugiesisch, Mandarin-Chinesisch, Japanisch und Koreanisch – und der Bericht kommt in der Sprache der Besprechung zurück, nicht ins Englische übersetzt. Kilns eigene Oberfläche gibt es ebenfalls in diesen neun Sprachen, und du kannst sie unabhängig von deinem Gerät einstellen.</p>
+<!-- HOW IT WORKS -->
+<section class="section band" id="how"><div class="wrap center">
+  <p class="eyebrow">So funktioniert’s</p>
+  <h2 class="h2">Aufnehmen. Brennen. Liefern.</h2>
+  <div class="steps">
+    <div class="step">
+      <figure><img src="../assets/img/de/step-record.jpg" width="760" height="1456" loading="lazy"
+        alt="Kiln nimmt eine Besprechung auf, mit Timer."></figure>
+      <span class="num" aria-hidden="true">1</span>
+      <h3>Aufnehmen</h3>
+      <p>Nimm eine Besprechung auf oder importiere eine Audiodatei. Lass den Titel leer, und Kiln benennt die Besprechung nach dem, was gesagt wurde.<sup class="fn"><a href="#fn1" aria-label="Anmerkung 1">1</a></sup></p>
+    </div>
+    <div class="step">
+      <figure><img src="../assets/img/de/step-transcript.jpg" width="760" height="1456" loading="lazy"
+        alt="Ein Transkript in Kiln, nach Sprechern getrennt, mit Zeitstempeln."></figure>
+      <span class="num" aria-hidden="true">2</span>
+      <h3>Brennen</h3>
+      <p>Kiln trennt die Sprecher und schreibt ein Transkript, das du durchsuchen, bearbeiten und abspielen kannst. Es kann vorschlagen, wer wer ist – belegt durch das, was die jeweilige Person gesagt hat.<sup class="fn"><a href="#fn1" aria-label="Anmerkung 1">1</a></sup></p>
+    </div>
+    <div class="step">
+      <figure><img src="../assets/img/de/step-outputs.jpg" width="760" height="1456" loading="lazy"
+        alt="Kilns Berichtsauswahl mit den Berichten Kurzzusammenfassung, Ausführliche Notizen, Aufgaben und Jira-Tickets."></figure>
+      <span class="num" aria-hidden="true">3</span>
+      <h3>Liefern</h3>
+      <p>Wähle einen Bericht, und Kiln schreibt ihn auf deinem Gerät. Kopiere ihn oder teile ihn als PDF.<sup class="fn"><a href="#fn1" aria-label="Anmerkung 1">1</a></sup></p>
+    </div>
   </div>
-</section>
+</div></section>
 
-<section class="wrap">
-  <div class="callout">
-    <h2>Privat von Grund auf</h2>
-    <p>Keine Cloud, kein Account, kein Abo, keine Analyse. Kiln sendet deine Aufnahmen, Transkripte oder Berichte niemals irgendwohin – sie bleiben im privaten Bereich der App auf deinem Gerät. Bewegt werden sie nur durch dich: wenn du selbst etwas teilst oder exportierst, und durch die Sicherung deines Geräts.</p>
+<!-- REPORTS -->
+<section class="section"><div class="wrap center">
+  <p class="eyebrow">Berichte</p>
+  <h2 class="h2">Acht Berichte. Ein Tippen.</h2>
+  <p class="lede">Jeder entsteht aus deinem Transkript – in der Sprache der Besprechung.<sup class="fn"><a href="#fn1" aria-label="Anmerkung 1">1</a></sup></p>
+  <div class="reports" role="list">
+    <div class="report" role="listitem"><h3>Kurzzusammenfassung</h3><p>Das Wesentliche in einer Minute – Überblick, Themen, Fazit</p></div>
+    <div class="report" role="listitem"><h3>Ausführliche Notizen</h3><p>Jedes Konzept ausführlich behandelt, mit Beispielen</p></div>
+    <div class="report" role="listitem"><h3>Aufgaben</h3><p>Aufgaben mit Verantwortlichen und Prioritäten</p></div>
+    <div class="report" role="listitem"><h3>Jira-Tickets</h3><p>Sprintfertige Epics, Tickets und Abnahmekriterien</p></div>
+    <div class="report" role="listitem"><h3>Technische Entscheidungen</h3><p>Entscheidungen mit Begründung, Auswirkung und Risiko</p></div>
+    <div class="report" role="listitem"><h3>Besprechungsprotokoll</h3><p>Teilnehmer, Agenda, Diskussion und Ergebnisse</p></div>
+    <div class="report" role="listitem"><h3>E-Mail-Entwurf</h3><p>Ein professionelles Follow-up, fertig zum Senden</p></div>
+    <div class="report" role="listitem"><h3>Release Notes</h3><p>Funktionen, Verbesserungen, Fehlerbehebungen und bekannte Probleme</p></div>
   </div>
-</section>
+  <div class="wide-art">
+    <img src="../assets/img/de/mac-report.jpg" width="2000" height="1310" loading="lazy"
+      alt="Ein Bericht „Kurzzusammenfassung“, geöffnet in Kiln auf einem MacBook Pro.">
+  </div>
+</div></section>
 
-<section class="wrap">
-  <p style="color:var(--muted-2);font-size:14px;text-align:center;max-width:620px;margin:0 auto">Erfordert macOS&nbsp;26 oder iOS&nbsp;26. Die Transkription nutzt Apples Sprachmodelle auf dem Gerät, die aktuelle Hardware voraussetzen; für die Berichtserstellung muss zusätzlich Apple&nbsp;Intelligence aktiviert sein. Kiln sagt dir deutlich, wenn ein Gerät eines von beidem nicht ausführen kann – siehe <a href="support.html">Support</a>.</p>
-</section>
+<!-- PRIVACY -->
+<section class="section band"><div class="wrap">
+  <div class="center">
+    <p class="eyebrow">Datenschutz</p>
+    <h2 class="h2">Privat von Grund auf.<br>Nicht durch ein Versprechen.</h2>
+    <p class="lede">Kiln hat keinen eigenen Server. Deine Besprechungen werden auf deinem Gerät verarbeitet, und Kiln sendet sie nirgendwohin.</p>
+  </div>
+  <div class="facts">
+    <div class="fact">
+      <svg class="glyph" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="M9 9h6v6H9z"/><path d="M9 1.5v2.5M15 1.5v2.5M9 20v2.5M15 20v2.5M1.5 9H4M1.5 15H4M20 9h2.5M20 15h2.5"/></svg>
+      <h3>Alles läuft auf deinem Gerät.</h3>
+      <p>Transkription, das Auseinanderhalten der Sprecher, Titel und Berichte – alles geschieht direkt auf deinem Gerät.</p>
+    </div>
+    <div class="fact">
+      <svg class="glyph" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4M3 3l18 18"/></svg>
+      <h3>Die Mac-App kann nicht online gehen.</h3>
+      <p>Sie ist ohne die Erlaubnis gebaut, online zu gehen – sie kann sich also mit nichts verbinden, nicht einmal, um nach Updates zu suchen.</p>
+    </div>
+    <div class="fact">
+      <svg class="glyph" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.6-7 8-7s8 3 8 7"/><path d="M3 3l18 18"/></svg>
+      <h3>Kein Account. Keine Analyse.</h3>
+      <p>Keine Anmeldung, und nichts, was dich verfolgt, Werbung zeigt oder misst, wie du die App nutzt.</p>
+    </div>
+    <div class="fact">
+      <svg class="glyph" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h16M9 7V4h6v3M6 7l1 13h10l1-13"/><path d="M10 11v6M14 11v6"/></svg>
+      <h3>Löschen heißt löschen.</h3>
+      <p>Löschst du eine Besprechung, entfernt Kiln ihre Aufnahme, ihr Transkript und jeden daraus erstellten Bericht. Frühere Backups behalten ihre Kopie, bis sie ersetzt werden.</p>
+    </div>
+  </div>
+  <p class="center"><a class="more" href="privacy.html">Datenschutzerklärung lesen</a></p>
+</div></section>
+
+<!-- LANGUAGES -->
+<section class="section"><div class="wrap center">
+  <p class="eyebrow">Sprachen</p>
+  <h2 class="h2">Neun Sprachen.<br>Berichte in derselben.</h2>
+  <p class="lede">Kiln transkribiert neun Sprachen und schreibt jeden Bericht in der Sprache der Besprechung, nicht ins Englische übersetzt.<sup class="fn"><a href="#fn2" aria-label="Anmerkung 2">2</a></sup> Auch die Oberfläche gibt es in allen neun, und du kannst sie unabhängig von deinem Gerät einstellen.</p>
+  <ul class="langs" role="list" aria-label="Unterstützte Sprachen">
+    <li lang="en">English</li><li lang="es">Español</li><li lang="fr">Français</li>
+    <li lang="de">Deutsch</li><li lang="it">Italiano</li><li lang="pt-BR">Português</li>
+    <li lang="zh-Hans">中文</li><li lang="ja">日本語</li><li lang="ko">한국어</li>
+  </ul>
+</div></section>
+
+<!-- REMINDERS (4.1) -->
+<section class="section band"><div class="wrap">
+  <div class="split">
+    <figure><img src="../assets/img/de/reminders.jpg" width="760" height="1456" loading="lazy"
+      alt="Kilns Karte für Besprechungserinnerungen mit der Schaltfläche „Erinnerungen aktivieren“."></figure>
+    <div class="text">
+      <p class="eyebrow">Neu in Kiln 4.1</p>
+      <h2 class="h2">Keine Besprechungsnotiz mehr verpassen.</h2>
+      <p>Kiln liest deinen Kalender auf deinem Gerät und erinnert dich kurz vor Beginn einer Besprechung. Es bearbeitet deine Termine nie, und Kiln sendet sie nie irgendwohin.</p>
+      <p>Tippe auf die Erinnerung, und Kiln öffnet sich aufnahmebereit – die Besprechung ist schon benannt.</p>
+    </div>
+  </div>
+</div></section>
+
+<!-- MAC, IPHONE, IPAD -->
+<section class="section"><div class="wrap">
+  <div class="center">
+    <p class="eyebrow">Mac, iPhone und iPad</p>
+    <h2 class="h2">Gemacht für jedes Gerät,<br>das bei deinen Besprechungen dabei ist.</h2>
+    <p class="lede">Eine native App für Mac, iPhone und iPad – mit den Details, die jedes Gerät verdient.</p>
+  </div>
+  <ul class="ticks narrow" role="list" style="margin-left:auto;margin-right:auto">
+    <li>Auf dem Mac startet <kbd>⌘N</kbd> eine Aufnahme und <kbd>⌘I</kbd> importiert Audio – von überall in der App.</li>
+    <li>Auf dem iPhone zeigt eine Live-Aktivität die laufende Aufnahme auf dem Sperrbildschirm und in der Dynamic Island – Stopp ist nur ein Tippen entfernt.</li>
+    <li>Besprechungserinnerungen funktionieren auf allen dreien.</li>
+  </ul>
+</div></section>
+
+<!-- FINAL CTA -->
+<section class="section band final"><div class="wrap center">
+  <h2 class="h2">Deine nächste Besprechung ist<br>ein guter Anfang.</h2>
+  <p class="lede">Kostenlos im App Store für Mac, iPhone und iPad.<sup class="fn"><a href="#fn3" aria-label="Anmerkung 3">3</a></sup></p>
+  <div class="store-row">
+    <a class="appstore" href="https://apps.apple.com/app/id6784888925"><img src="../assets/app-store-badge.svg" alt="Kiln im App Store laden" width="160" height="54"></a>
+  </div>
+</div></section>
+
 </main>
+
+<aside class="footnotes" aria-label="Anmerkungen"><div class="wrap">
+  <ol>
+    <li id="fn1">Berichtserstellung, automatische Besprechungstitel und Vorschläge für Sprechernamen nutzen Apple Intelligence. Dein Gerät muss es unterstützen, und es muss aktiviert sein. Aufnahme, Import, Transkription und das Auseinanderhalten der Sprecher brauchen es nicht.</li>
+    <li id="fn2">Die Transkription nutzt Apples Spracherkennung. Hat dein Gerät eine Sprache noch nicht, lädt es sie beim ersten Verwenden von Apple herunter.</li>
+    <li id="fn3">Erfordert macOS 26, iOS 26 oder iPadOS 26. Manche Geräte können Sprache nicht in Text umwandeln, und Kiln sagt dir deutlich, wenn deines das nicht kann. <a href="support.html">Support</a></li>
+  </ol>
+</div></aside>
 
 <footer><div class="wrap">
   <span>© 2026 Tushar Gupta</span>
