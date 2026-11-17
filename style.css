@@ -89,6 +89,10 @@ sup.fn a{color:inherit}
 .cta-row .more{margin-top:0}
 .fine{font-size:14px;color:var(--muted-2);margin-top:18px}
 .hero-art{max-width:1200px;margin:clamp(28px,5vw,56px) auto 0;padding:0 12px}
+/* ── film ─────────────────────────────────────────────────────────────── */
+.film{max-width:1000px;margin:clamp(28px,4vw,48px) auto 0;border-radius:var(--radius);overflow:hidden;
+  background:#000;border:1px solid var(--border);box-shadow:0 30px 80px rgba(0,0,0,.55)}
+.film video{display:block;width:100%;height:auto;aspect-ratio:16/9;background:#000}
 
 /* ── intro statement ─────────────────────────────────────────────────── */
 .statement{font-size:clamp(24px,3.4vw,40px);line-height:1.22;font-weight:600;letter-spacing:-.02em;
